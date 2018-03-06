@@ -6,7 +6,9 @@ Feel free to use this in your own projects! I just developed this as a little ho
 
 If you find this tool to be useful, please consider buying me a beer (or help me not drown in my student loan payments) by donating here:
 
+
 ZEN: znacPknwMcgmNfgoq1h1BMXRH6vxgHqsCBj
+
 LTC: LXwXzt1yTGeQRVsQFKxgb5Ln5s7N5JuiKW
 
 # Requirements
