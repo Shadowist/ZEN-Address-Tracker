@@ -12,21 +12,20 @@ ZEN: znacPknwMcgmNfgoq1h1BMXRH6vxgHqsCBj
 LTC: LXwXzt1yTGeQRVsQFKxgb5Ln5s7N5JuiKW
 
 # Requirements
-1. Python3+ (developed using Python 3.6)
-2. Module: csv
-3. Module: requests
-4. Module: datetime
-5. Module: tzlocal
-6. Module: logging
+Developed using Python 3.6.2. Use pip to install missing modules.
+
+1. Module: requests
+2. Module: tzlocal
 
 # Usage
 Example: python zen_tracker.py "zen address"
+
 1. Finds all transactions using the Insight API on explorer.zensystem.io.
 2. Reads all receive transactions.
 3. Reads all spent transactions.
 4. Reads coin data by date using the Bittrex API.
 5. Sorts all the data.
-6. Writes out a CSV file called that ZEN address.
+6. Writes out a CSV file using the ZEN address as the name.
 
 # CSV Format
 Current CSV data in order:
