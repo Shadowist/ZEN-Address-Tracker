@@ -4,7 +4,7 @@ from datetime import datetime
 import logging
 FORMAT = '%(asctime)-15s [%(levelname)s] %(filename)s(%(lineno)d): %(message)s'
 logging.basicConfig(format=FORMAT)
-logger = logging.getLogger('exchange_utils')
+logger = logging.getLogger('zen_tx_utils')
 logger.setLevel(logging.INFO)
 
 class bittrex_api():
@@ -14,8 +14,11 @@ class bittrex_api():
 	coin_market_history = []
 	usdt_market_history = []
 
-	def __init__(self, market = "BTC", coin = "ZEN"):
+	def __init__(self, market = "BTC", coin = "ZEN", debug = False):
 		''' market = BTC/ETH, coin = any available '''
+
+		if debug:
+			logger.setLevel(logging.DEBUG)
 
 		self.coin = coin
 		self.market = market

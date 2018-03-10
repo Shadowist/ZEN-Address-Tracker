@@ -19,7 +19,10 @@ class zen_address_data():
 	transactions = []
 	tx_history = []
 
-	def __init__(self, zen_address):
+	def __init__(self, zen_address, debug = False):
+		if debug:
+			logger.setLevel(logging.DEBUG)
+
 		self.zen_address = zen_address
 		logger.info("Initializing: {}".format(self.zen_address))
 		self.web_address = "http://explorer.zensystem.io/insight-api-zen/addr/{}".format(zen_address)
