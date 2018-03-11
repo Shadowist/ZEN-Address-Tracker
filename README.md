@@ -18,7 +18,10 @@ Developed using Python 3.6.2. Use pip to install missing modules.
 2. Module: tzlocal
 
 # Usage
-Example: python zen_tracker.py "zen address"
+This is currently dependant on Python 3.6+, so use one of the following commands below if you have multiple python version on your machine.
+
+Example: python36 zen_tracker.py "zen address"
+Example: python3.6 zen_tracker.py "zen address"
 
 1. Finds all transactions using the Insight API on explorer.zensystem.io.
 2. Reads all receive transactions.
