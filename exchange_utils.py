@@ -37,8 +37,8 @@ class bittrex_api():
 		''' Obtain coin information on a particular date. '''
 
 		logger.debug("Bittrex query: {}".format(date_string))
-		convert = date_string.split('+')
-		convert = ''.join(convert[0] + '+' + ''.join(convert[1].split(':')))
+		convert = date_string[:-3] + date_string[-2:]
+		logger.debug("Converted to date format: {}".format(convert))
 		test_date = datetime.strptime(convert, "%Y-%m-%d %H:%M:%S%z")
 
 		coin_value = 0
